@@ -1,106 +1,72 @@
-@charset "UTF-8";
-/* CSS Document */
+<!DOCTYPE html>
 
-body {
-	color: rgba(5,5,5,1.00);
-	font-family: Georgia, 'Times New Roman', Times, 'serif';
-		margin: 0px;
-	}
-
-header {
-	padding-top: 32px;
-	padding-bottom: 25px;
-	background: linear-gradient(270deg, #4fffd2, #14cde1, #48e48c);
-    background-size: 600% 600%;
-
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
-.container {
-	width: 400px;
-	margin-left: auto;
-	margin-right: auto;
-	display: flex;
-	aling-items: center;
-}
-
-.icon {
-	margin-top: 20px;
-}
-
-.icon img {
-	border-radius: 50% ;
-}
+<html lang="ja">
 	
-.icon img ::after {
-    filter: blur(20px);
-      transform: translateY(20px);
-      mix-blend-mode: multiply;
-}
+<head>
+	<meta charset="utf-8">
+	<title>Natsuha Nakamura Web site</title>
+	<link rel="icon" href="favicon.ico">
+	<meta name="description" content="中村夏波 Natsuha Nakamuraのポートフォリオサイトです。">
+	
+	<link rel="stylesheet" href="css/styles.css">
+	
+	</head>
+<body oncontextmenu="return false;">
+	
+	<header>
+	  <div class="container">
+			<div class="icon">
+				<img src="images/IMG_6316.JPG" alt="natsuha nakamuraのアイコンです" width="132" height="132">
+		  </div>
+			<div class="info">
+<h1>Natsuha Nakamura</h1>
+<p>Creator</p>
+	<ul>
+		<li>
+			<a href="https://www.instagram.com/nth_00_nkmr/" target="_blank">
+	<img src="images/glyph-logo_May2016.png" width="20" alt="Instagramのアイコン">
+		  </a>
+		</li>
+		<li><a href="https://twitter.com/nkmr_nth004" target="_blank">
+			<img src="images/Twitter_Logo_black.png" width="20" alt="Twitterのアイコン"></a></li>
+    </ul>
+			</div>
+		</div>
+	</header>
 
-.info {
-	margin-left: 40px;
-}
+<!--ここから作品紹介-->
+	<section class="works">
+		<h1>WORKS</h1>
+		
+		<section>
+		<h1>3DCG</h1>
+<img src="images/images_1.png" width="560" alt="3DCGで作ったミキサーの画像">
+　　　　　
+<p>3DCGソフトを使用することができます。</p>
+		</section>
+		
+		<section>
+		<h1>配信イベント</h1>
+		
+		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LDHLIVTEAYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<p>イベントでのラジオや映像の生配信業務ができます。</p>
+		</section>
+		
+		<section>
+		<h1>動画制作</h1>
+		
+	<video controls controlsList="nodownload" src="videos/hamburger.mp4" preload="auto" width="560"></video>
+	
+		<p>さまざまなジャンルの動画を制作します。</p>
+		</section>
+		</section>
+		
+	<footer>
+	<p>(c) summerwave.com</p>
+	</footer>
+		
+</body>
+</html>
 
-.info p {
-	margin: 0;
-	margin-bottom: 27px;
-}
 
-.info ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	display: flex;
-}
-
-.info ul li {
-	margin-right: 20px;
-	margin-bottom: 30px;
-}
-
-.works {
-	width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.works > h1 {
-	font-size: 30px;
-	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 60px;
-
-}
-
-.works > section {
-	margin-bottom: 60px;
-}
-
-.works > section > h1 {
-	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
-}
-
-footer {
-	text-align: center;
-	font-size: 14px;
-	color:  gray;
-}
