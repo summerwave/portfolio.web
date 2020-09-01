@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	color: rgba(5,5,5,1.00);
+	font-family: Georgia, 'Times New Roman', Times, 'serif';
+		margin: 0px;
+	}
+
+header {
+	padding-top: 32px;
+	padding-bottom: 25px;
+	background: linear-gradient(270deg, #4fffd2, #14cde1, #48e48c);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.container {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	aling-items: center;
+}
+
+.icon {
+	margin-top: 20px;
+}
+
+.icon img {
+	border-radius: 50% ;
+}
+	
+.icon img ::after {
+    filter: blur(20px);
+      transform: translateY(20px);
+      mix-blend-mode: multiply;
+}
+
+.info {
+	margin-left: 40px;
+}
+
+.info p {
+	margin: 0;
+	margin-bottom: 27px;
+}
+
+.info ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+}
+
+.info ul li {
+	margin-right: 20px;
+	margin-bottom: 30px;
+}
+
+.works {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.works > h1 {
+	font-size: 30px;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 60px;
+
+}
+
+.works > section {
+	margin-bottom: 60px;
+}
+
+.works > section > h1 {
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+}
+
+footer {
+	text-align: center;
+	font-size: 14px;
+	color:  gray;
+}
